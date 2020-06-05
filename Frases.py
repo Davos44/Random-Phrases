@@ -41,5 +41,5 @@ for number in listing:
 	con.starttls()
 	con.login('my mail', 'password')
 	#I tried here with .encode,.decode, and .encode.decode but at best it just sends gibberish, at worst it doesnt work
-  con.sendmail('my mail', 'other mail' , msg.encode('utf-8').decode('utf-8'))
+ 	con.sendmail('my mail', 'other mail' , msg.encode('utf-8').decode('utf-8'))
 	con.quit()
